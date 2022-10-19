@@ -55,7 +55,7 @@ _Install the Project as shown below._
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/Estacisity/crosshair.git
+   git clone https://github.com/JacobLAllen/crosshair.git
    ```
 3. Install Python packages
    ```sh
