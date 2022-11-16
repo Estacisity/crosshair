@@ -1,12 +1,14 @@
 import random, sys
 from PyQt5 import QtCore, QtGui, QtWidgets
 
+colour = "130,60,255"
+
 class Crosshair(QtWidgets.QWidget):
     def __init__(self, parent=None, windowSize=24, penWidth=2):
         QtWidgets.QWidget.__init__(self, parent)
         self.ws = windowSize
         self.resize(windowSize+1, windowSize+1)
-        self.pen = QtGui.QPen(QtGui.QColor(130,60,255))      #130,60,255
+        self.pen = QtGui.QPen(QtGui.QColor(colour))      #130,60,255
         self.pen.setWidth(penWidth)                                            
         self.setWindowFlags(QtCore.Qt.FramelessWindowHint | QtCore.Qt.WindowStaysOnTopHint | QtCore.Qt.WindowTransparentForInput)
         self.setAttribute(QtCore.Qt.WA_TranslucentBackground)
